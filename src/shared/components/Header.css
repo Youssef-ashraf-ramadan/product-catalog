@@ -11,9 +11,10 @@
   margin: 0 auto;
   padding: 0 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   height: 70px;
+  position: relative;
 }
 
 .logo {
@@ -21,6 +22,8 @@
   color: #edc80e;
   font-weight: bold;
   font-size: 1.5rem;
+  position: absolute;
+  left: 20px;
 }
 
 .logo h1 {
@@ -31,6 +34,8 @@
 .nav {
   display: flex;
   gap: 30px;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav-link {
@@ -56,6 +61,13 @@
   .header-container {
     padding: 0 15px;
     height: 60px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .logo {
+    position: static;
+    margin-bottom: 10px;
   }
   
   .logo h1 {
